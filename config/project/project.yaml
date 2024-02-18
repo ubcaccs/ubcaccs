@@ -1,0 +1,22 @@
+dateModified: 1707972688
+email:
+  fromEmail: ubcaccs@gmail.com
+  fromName: ubcaccs.ca
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    5e93ae0f-d6a1-4d7f-88d7-37a8f2c68196: ubcaccs.ca # ubcaccs.ca
+    025f765b-22cc-4651-a46e-0da4cba5388d: ubcaccs.ca # ubcaccs.ca
+    d759efbd-e6b8-46d7-b600-312486821a48: Common # Common
+system:
+  edition: solo
+  live: true
+  name: ubcaccs.ca
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

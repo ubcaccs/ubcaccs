@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: ubcaccs.ca
+primary: true
+siteGroup: 5e93ae0f-d6a1-4d7f-88d7-37a8f2c68196 # ubcaccs.ca
+sortOrder: 1
