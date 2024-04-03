@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ['templates/**/*.twig'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark-blue': '#030B1F',
+      },
+    },
   },
   plugins: [],
 }
