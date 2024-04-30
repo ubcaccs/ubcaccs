@@ -1,0 +1,19 @@
+columnSuffix: ajokvqus
+contentColumnType: text
+fieldGroup: 087e0c6f-1168-48dd-b338-2bc4bdf4e93d # Events
+handle: description
+instructions: null
+name: Description
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

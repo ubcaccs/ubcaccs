@@ -30,4 +30,7 @@ return GeneralConfig::create()
     ->aliases([
         '@webroot' => dirname(__DIR__) . '/web',
     ])
+    ->enableGql(true)
+    // change the default trigger word
+    ->cpTrigger("admin-accs")
 ;

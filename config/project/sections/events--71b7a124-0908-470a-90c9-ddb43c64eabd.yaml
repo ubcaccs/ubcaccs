@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: events
+name: Events
+propagationMethod: all
+siteSettings:
+  025f765b-22cc-4651-a46e-0da4cba5388d: # ubcaccs.ca
+    enabledByDefault: true
+    hasUrls: true
+    template: events/_entry
+    uriFormat: 'events/{slug}'
+type: channel
