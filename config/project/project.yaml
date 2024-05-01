@@ -1,4 +1,4 @@
-dateModified: 1714508411
+dateModified: 1714518418
 elementSources:
   craft\elements\Entry:
     -
@@ -35,8 +35,16 @@ fs:
       path: '@webroot/images/uploads/events'
     type: craft\fs\Local
     url: '@web/images/uploads/events'
+  favicon:
+    hasUrls: true
+    name: Favicon
+    settings:
+      path: '@webroot/images/uploads'
+    type: craft\fs\Local
+    url: '@web/images/uploads'
 meta:
   __names__:
+    0d40cb9c-a6c7-40fd-a46a-37fbb4c2f761: Favicon # Favicon
     5e93ae0f-d6a1-4d7f-88d7-37a8f2c68196: ubcaccs.ca # ubcaccs.ca
     5edf3f64-12fc-4fd8-aa67-1f3ea36616e8: Description # Description
     06c4324d-71fe-476a-9b1f-3e6feaecf1ac: 'Public Schema' # Public Schema

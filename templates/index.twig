@@ -1,35 +1,37 @@
-<!DOCTYPE html>
+{# Create an asset query with the 'volume' and 'kind' parameters #}<!DOCTYPE html>
 <html lang="en-US">
 <head>
     {% block head %}
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
-    <title>AccessCS UBC</title>
+    <title>UBC AccessCS</title>
     <meta name="description" content="AccessCS is a community dedicated to creating a welcoming space in UBC's Computer Science department for everyone.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="referrer" content="origin-when-cross-origin" />
-    {% do craft.app.view.registerCssFile('@web/css/output.css') %}
+    <link rel="stylesheet" href="{{ siteUrl }}/css/output.css">
+    <link rel="icon" href="{{ siteUrl }}/images/static/icon.png">
     {% endblock %}
 </head>
 
-<body class="bg-red-200">
+<body class="bg-dark-blue">
     {% block body %}
-    <nav class="bg-dark-blue">
+    <nav class="bg-navbar-blue text-[22px]">
         <ul class="flex justify-between items-center px-6 py-4">
+            <img src="{{ siteUrl }}/images/static/logo.png" class="" alt="AccessCS Logo">
             <li><a href="#" class="text-white">Home</a></li>
             <li><a href="#" class="text-white">About</a></li>
             <li><a href="#" class="text-white">Services</a></li>
             <li><a href="#" class="text-white">Contact</a></li>
         </ul>
     </nav>
+
     <div class="container mx-auto py-12">
-        <h1 class="text-red-600 text-4xl font-bold text-center mb-4">
+        <h1 class="text-red-600 text-[100px] font-bold text-center mb-4">
             We want to hear your voice
         </h1>
-        <p class="text-dark-blue text-lg text-center">
+        <p class="text-navbar-blue text-lg text-center">
             Help us making the UBC Computer Science Department more accessible, and join our community in the process!
         </p>
-    </div>
     {% endblock %}
 </body>
 </html>

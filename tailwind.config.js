@@ -2,11 +2,14 @@
 module.exports = {
   content: [
     'templates/**/*.twig',
-    '/src/css/input.css'],
+  ],
   theme: {
     extend: {
       colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
         'dark-blue': '#030B1F',
+        'navbar-blue': '#091F5B',
       },
     },
   },
