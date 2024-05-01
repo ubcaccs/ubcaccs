@@ -1,8 +1,3 @@
-body {
-  font-family: "DIN Alternate", sans-serif;
-  font-size: 16px;
-}
-
 /*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
@@ -610,20 +605,138 @@ video {
   display: flex;
 }
 
-.h-12 {
-  height: 3rem;
+.hidden {
+  display: none;
+}
+
+.w-\[129px\] {
+  width: 129px;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
+.max-w-\[00px\] {
+  max-width: 00px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+
+.max-w-\[700px\] {
+  max-width: 700px;
+}
+
+.max-w-\[6500px\] {
+  max-width: 6500px;
+}
+
+.max-w-\[650px\] {
+  max-width: 650px;
+}
+
+.max-w-\[60px\] {
+  max-width: 60px;
+}
+
+.max-w-\[680px\] {
+  max-width: 680px;
+}
+
+.max-w-\[750px\] {
+  max-width: 750px;
+}
+
+.max-w-\[70px\] {
+  max-width: 70px;
+}
+
+.max-w-\[730px\] {
+  max-width: 730px;
+}
+
+.max-w-\[740px\] {
+  max-width: 740px;
+}
+
+.max-w-\[760px\] {
+  max-width: 760px;
+}
+
+.max-w-\[200em\] {
+  max-width: 200em;
+}
+
+.max-w-\[50em\] {
+  max-width: 50em;
+}
+
+.max-w-\[40em\] {
+  max-width: 40em;
+}
+
+.max-w-\[45em\] {
+  max-width: 45em;
+}
+
+.max-w-\[48em\] {
+  max-width: 48em;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
-.bg-\[--dark-blue\] {
-  background-color: var(--dark-blue);
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.space-x-9 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .bg-dark-blue {
@@ -636,14 +749,24 @@ video {
   background-color: rgb(9 31 91 / var(--tw-bg-opacity));
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-4 {
@@ -655,39 +778,32 @@ video {
   text-align: center;
 }
 
-.text-\[100px\] {
-  font-size: 100px;
+.font-headerFont {
+  font-family: Hiragino Kaku Gothic Std;
 }
 
-.text-\[22px\] {
-  font-size: 22px;
+.font-mainFont {
+  font-family: Hiragino Maru Gothic ProN;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[65px\] {
+  font-size: 65px;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.text-dark-blue {
+.text-off-white {
   --tw-text-opacity: 1;
-  color: rgb(3 11 31 / var(--tw-text-opacity));
-}
-
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
+  color: rgb(237 240 245 / var(--tw-text-opacity));
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-navbar-blue {
-  --tw-text-opacity: 1;
-  color: rgb(9 31 91 / var(--tw-text-opacity));
 }

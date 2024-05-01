@@ -10,6 +10,12 @@ module.exports = {
         current: 'currentColor',
         'dark-blue': '#030B1F',
         'navbar-blue': '#091F5B',
+        'off-white': '#EDF0F5',
+      },
+      fontFamily: {
+        headerFont: ['Hiragino Kaku Gothic Std'],
+        mainFont: ["Hiragino Maru Gothic ProN"],
+
       },
     },
   },

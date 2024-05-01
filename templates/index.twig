@@ -1,4 +1,4 @@
-{# Create an asset query with the 'volume' and 'kind' parameters #}<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
     {% block head %}
@@ -15,21 +15,25 @@
 
 <body class="bg-dark-blue">
     {% block body %}
-    <nav class="bg-navbar-blue text-[22px]">
-        <ul class="flex justify-between items-center px-6 py-4">
-            <img src="{{ siteUrl }}/images/static/logo.png" class="" alt="AccessCS Logo">
-            <li><a href="#" class="text-white">Home</a></li>
-            <li><a href="#" class="text-white">About</a></li>
-            <li><a href="#" class="text-white">Services</a></li>
-            <li><a href="#" class="text-white">Contact</a></li>
-        </ul>
+    <nav class="bg-navbar-blue text-[20px]">
+
+        <div class="max-w-[48em] px-5 py-4.5">
+            <ul class="flex justify-between items-center">
+                <img src="{{ siteUrl }}/images/static/logo.png" class="w-[129px]" alt="AccessCS Logo">
+                <li><a href="#" class="text-white">Home</a></li>
+                <li><a href="#" class="text-white">About</a></li>
+                <li><a href="#" class="text-white">Services</a></li>
+                <li><a href="#" class="text-white">Contact us</a></li>
+            </ul>
+        </div>
+
     </nav>
 
     <div class="container mx-auto py-12">
-        <h1 class="text-red-600 text-[100px] font-bold text-center mb-4">
+        <h1 class="text-off-white text-[65px] font-bold text-center mb-4 font-headerFont">
             We want to hear your voice
         </h1>
-        <p class="text-navbar-blue text-lg text-center">
+        <p class="text-off-white text-[20px] text-center font-mainFont">
             Help us making the UBC Computer Science Department more accessible, and join our community in the process!
         </p>
     {% endblock %}
