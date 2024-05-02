@@ -11,31 +11,45 @@
     <link rel="stylesheet" href="{{ siteUrl }}/css/output.css">
     <link rel="icon" href="{{ siteUrl }}/images/static/icon.png">
     {% endblock %}
+    <style>
+        .logo-image {
+            padding-top: 0.5em; /* Adjust the value as needed */
+        }
+
+    </style>
 </head>
 
+{% block body %}
 <body class="bg-dark-blue">
-    {% block body %}
-    <nav class="bg-navbar-blue text-[20px]">
+    <div class="bg-gradient-to-t from-dark-blue from-20% via-[#06143B] via-70% to-navbar-blue to-90% h-svh">
+        {# Navbar #}
+        <nav class="bg-navbar-blue text-off-white text-base font-mainFont py-4">
+            <div class="max-w-[48em] px-5">
+                <ul class="flex justify-between items-center">
+                    <img class="logo-image w-[129px]" src="{{ siteUrl }}/images/static/logo.png" alt="AccessCS Logo">
+                    <li><a href="#" class="">Home</a></li>
+                    <li><a href="#" class="">About</a></li>
+                    <li><a href="#" class="">Services</a></li>
+                    <li><a href="#" class="">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
 
-        <div class="max-w-[48em] px-5 py-4.5">
-            <ul class="flex justify-between items-center">
-                <img src="{{ siteUrl }}/images/static/logo.png" class="w-[129px]" alt="AccessCS Logo">
-                <li><a href="#" class="text-white">Home</a></li>
-                <li><a href="#" class="text-white">About</a></li>
-                <li><a href="#" class="text-white">Services</a></li>
-                <li><a href="#" class="text-white">Contact us</a></li>
-            </ul>
+        {# About Section #}
+        <div class="flex justify-around flex-wrap items-center">
+            <div class="align-start pl-44 pb-24">
+                <h1 class="text-off-white text-6xl font-bold text-left mb-4 font-headerFont max-w-[550px]">
+                    We want to hear your voice
+                </h1>
+                <p class="text-off-white text-[20px] text-left font-mainFont max-w-[550px]">
+                    Help us making the UBC Computer Science Department more accessible, and join our community in the process!
+                </p>
+            </div>
+            <img class="logo-image w-[650px]" src="{{ siteUrl }}/images/static/microphone.png" alt="Microphone">
         </div>
 
-    </nav>
+    </div>
 
-    <div class="container mx-auto py-12">
-        <h1 class="text-off-white text-[65px] font-bold text-center mb-4 font-headerFont">
-            We want to hear your voice
-        </h1>
-        <p class="text-off-white text-[20px] text-center font-mainFont">
-            Help us making the UBC Computer Science Department more accessible, and join our community in the process!
-        </p>
-    {% endblock %}
 </body>
+{% endblock %}
 </html>
