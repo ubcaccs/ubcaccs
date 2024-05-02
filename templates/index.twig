@@ -15,13 +15,16 @@
         .logo-image {
             padding-top: 0.5em; /* Adjust the value as needed */
         }
+        .pm-5 {
+            padding-left: 1.3rem; /* Adjust the value as needed */
+        }
 
     </style>
 </head>
 
 {% block body %}
 <body class="bg-dark-blue">
-    <div class="bg-gradient-to-t from-dark-blue from-20% via-[#06143B] via-70% to-navbar-blue to-90% h-svh">
+    <div class="bg-gradient-to-t from-dark-blue from-20% via-[#06143B] via-60% to-navbar-blue to-80% h-svh">
         {# Navbar #}
         <nav class="bg-navbar-blue text-off-white text-base font-mainFont py-4">
             <div class="max-w-[48em] px-5">
@@ -35,18 +38,25 @@
             </div>
         </nav>
 
-        {# About Section #}
-        <div class="flex justify-around flex-wrap items-center">
-            <div class="align-start pl-44 pb-24">
-                <h1 class="text-off-white text-6xl font-bold text-left mb-4 font-headerFont max-w-[550px]">
+        {# Home Section #}
+        <div class="flex justify-around flex-wrap items-start pt-8 h-svh">
+            <div class="align-start pm-5 pb-28 pt-16">
+                <h1 class="text-off-white text-6xl font-bold text-left mb-4 font-headerFont max-w-[550px] leading-normal">
                     We want to hear your voice
                 </h1>
                 <p class="text-off-white text-[20px] text-left font-mainFont max-w-[550px]">
                     Help us making the UBC Computer Science Department more accessible, and join our community in the process!
                 </p>
             </div>
-            <img class="logo-image w-[650px]" src="{{ siteUrl }}/images/static/microphone.png" alt="Microphone">
+            <img class="logo-image w-[650px] pr-4" src="{{ siteUrl }}/images/static/microphone.png" alt="Microphone">
         </div>
+
+        <div>
+            <h1>
+                Events
+            </h1>
+        </div>
+
 
     </div>
 
