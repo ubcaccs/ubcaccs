@@ -11,6 +11,7 @@ module.exports = {
         'dark-blue': '#030B1F',
         'navbar-blue': '#091F5B',
         'off-white': '#EDF0F5',
+        'light-blue': '#0285BB',
       },
       fontFamily: {
         headerFont: ['Hiragino Kaku Gothic Std'],

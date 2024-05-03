@@ -1,12 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: about
-name: About
+handle: home
+name: Home
 propagationMethod: all
 siteSettings:
   025f765b-22cc-4651-a46e-0da4cba5388d: # ubcaccs.ca
     enabledByDefault: true
     hasUrls: true
-    template: index
-    uriFormat: about
+    template: null
+    uriFormat: __home__
 type: single

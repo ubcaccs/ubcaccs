@@ -1,4 +1,13 @@
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.logo-image {
+    padding-top: 0.5em; /* Adjust the value as needed */
+}
+.pm-5 {
+    padding-left: 1.3rem; /* Adjust the value as needed */
+}

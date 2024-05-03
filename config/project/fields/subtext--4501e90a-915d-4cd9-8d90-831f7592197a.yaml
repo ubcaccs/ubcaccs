@@ -1,0 +1,19 @@
+columnSuffix: odbiikgo
+contentColumnType: text
+fieldGroup: d759efbd-e6b8-46d7-b600-312486821a48 # Common
+handle: subtext
+instructions: null
+name: Subtext
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

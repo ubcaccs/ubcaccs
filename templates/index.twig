@@ -1,65 +1,40 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-    {% block head %}
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <title>UBC AccessCS</title>
-    <meta name="description" content="AccessCS is a community dedicated to creating a welcoming space in UBC's Computer Science department for everyone.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="referrer" content="origin-when-cross-origin" />
-    <link rel="stylesheet" href="{{ siteUrl }}/css/output.css">
-    <link rel="icon" href="{{ siteUrl }}/images/static/icon.png">
-    {% endblock %}
-    <style>
-        .logo-image {
-            padding-top: 0.5em; /* Adjust the value as needed */
-        }
-        .pm-5 {
-            padding-left: 1.3rem; /* Adjust the value as needed */
-        }
-
-    </style>
-</head>
-
-{% block body %}
-<body class="bg-dark-blue">
-    <div class="bg-gradient-to-t from-dark-blue from-20% via-[#06143B] via-60% to-navbar-blue to-80% h-svh">
-        {# Navbar #}
-        <nav class="bg-navbar-blue text-off-white text-base font-mainFont py-4">
-            <div class="max-w-[48em] px-5">
-                <ul class="flex justify-between items-center">
-                    <img class="logo-image w-[129px]" src="{{ siteUrl }}/images/static/logo.png" alt="AccessCS Logo">
-                    <li><a href="#" class="">Home</a></li>
-                    <li><a href="#" class="">About</a></li>
-                    <li><a href="#" class="">Services</a></li>
-                    <li><a href="#" class="">Contact us</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        {# Home Section #}
-        <div class="flex justify-around flex-wrap items-start pt-8 h-svh">
-            <div class="align-start pm-5 pb-28 pt-16">
-                <h1 class="text-off-white text-6xl font-bold text-left mb-4 font-headerFont max-w-[550px] leading-normal">
-                    We want to hear your voice
-                </h1>
-                <p class="text-off-white text-[20px] text-left font-mainFont max-w-[550px]">
-                    Help us making the UBC Computer Science Department more accessible, and join our community in the process!
-                </p>
-            </div>
-            <img class="logo-image w-[650px] pr-4" src="{{ siteUrl }}/images/static/microphone.png" alt="Microphone">
-        </div>
-
-        <div>
-            <h1>
-                Events
-            </h1>
-        </div>
+{% extends "_layouts/main" %}
 
 
+{% block main %}
+
+
+{# Home Section #}
+<div class="flex justify-around flex-wrap items-start pt-8 flex-grow">
+    {# Voice Text #}
+    <div class="align-start pm-5 pb-28 pt-16 pr-2">
+        <h1 class="text-off-white text-6xl font-bold text-left mb-4 font-headerFont max-w-[550px] leading-normal pb-2">
+            {{ entry.title }}
+        </h1>
+        <p class="text-off-white text-[20px] text-left font-mainFont max-w-[550px]">{{ entry.subtext}}</p>
     </div>
+    
+    <img class="logo-image w-[650px] pr-4" src="{{ siteUrl }}/images/static/microphone.png" alt="Microphone">
+</div>
 
-</body>
+{# Event Section #}
+<div class="h-svh">
+    <h1 class="text-off-white">
+        Events
+    </h1>
+</div>
+
+{# About Section #}
+<div class="h-svh">
+    <h1 class="text-off-white">
+        About
+    </h1>
+</div>
+
+{# Contact us Section #}
+<div class="h-svh">
+    <h1 class="text-off-white">
+        Contact us
+    </h1>
+</div>
 {% endblock %}
-</html>
