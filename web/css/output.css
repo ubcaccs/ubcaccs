@@ -1,3 +1,23 @@
+.glide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glide__slide {
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  color: #fff;
+  background: rgb(136, 133, 133);
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.glide__slide[class*="active"] {
+  background: linear-gradient(-45deg, #ed145b, #7b31f4);
+}
+
 /*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
@@ -578,6 +598,10 @@ video {
   width: 650px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-\[48em\] {
   max-width: 48em;
 }
@@ -651,10 +675,6 @@ video {
   --tw-gradient-to-position: 80%;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -667,6 +687,10 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .pb-28 {
@@ -689,12 +713,12 @@ video {
   padding-top: 2rem;
 }
 
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-headerFont {
@@ -740,16 +764,6 @@ video {
 .pm-5 {
   padding-left: 1.3rem;
   /* Adjust the value as needed */
-}
-
-.hover\:text-dark-blue:hover {
-  --tw-text-opacity: 1;
-  color: rgb(3 11 31 / var(--tw-text-opacity));
-}
-
-.hover\:text-sky-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(3 105 161 / var(--tw-text-opacity));
 }
 
 .hover\:text-light-blue:hover {

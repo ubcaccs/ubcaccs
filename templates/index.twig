@@ -6,9 +6,9 @@
 
 {# Home Section #}
 <div class="flex justify-around flex-wrap items-start pt-8 flex-grow">
-    {# Voice Text #}
+    {# Homepage Text #}
     <div class="align-start pm-5 pb-28 pt-16 pr-2">
-        <h1 class="text-off-white text-6xl font-bold text-left mb-4 font-headerFont max-w-[550px] leading-normal pb-2">
+        <h1 class="text-off-white font-headerFont font-bold text-6xl text-left mb-4 max-w-[550px] leading-normal pb-2">
             {{ entry.title }}
         </h1>
         <p class="text-off-white text-[20px] text-left font-mainFont max-w-[550px]">{{ entry.subtext}}</p>
@@ -19,21 +19,38 @@
 
 {# Event Section #}
 <div class="h-svh">
-    <h1 class="text-off-white">
-        Events
+    <h1 class="text-off-white font-headerFont font-bold text-6xl text-center w-full">
+        Events 
     </h1>
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">0</li>
+            <li class="glide__slide">1</li>
+            <li class="glide__slide">2</li>
+          </ul>
+        </div>
+  
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+      </div>
+  
+      <script type="module" src="{{ siteUrl }}/carousel.js" defer></script>
 </div>
 
 {# About Section #}
 <div class="h-svh">
-    <h1 class="text-off-white">
+    <h1 class="text-off-white font-headerFont font-bold text-6xl">
         About
     </h1>
 </div>
 
 {# Contact us Section #}
 <div class="h-svh">
-    <h1 class="text-off-white">
+    <h1 class="text-off-white font-headerFont font-bold text-6xl">
         Contact us
     </h1>
 </div>
