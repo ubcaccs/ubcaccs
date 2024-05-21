@@ -31,10 +31,34 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 5edf3f64-12fc-4fd8-aa67-1f3ea36616e8 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be557e4e-5d7f-4851-80dd-175e46cdb78f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7f94ca16-453f-4ff9-84b4-1154a8a813d2 # Event Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9b75cfe-9c83-40ed-af10-befb8c4d2e57
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: fdbff045-cab1-42dc-ae29-9dbba859c671
         userCondition: null
-fs: events
+fs: awsBucket
 handle: events
 name: Events
 sortOrder: 1

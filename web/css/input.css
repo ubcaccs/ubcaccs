@@ -1,23 +1,4 @@
-.glide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .glide__slide {
-    text-align: center;
-    height: 150px;
-    line-height: 150px;
-    color: #fff;
-    background: rgb(136, 133, 133);
-    font-size: 1em;
-    font-weight: 900;
-  }
-  
-  .glide__slide[class*="active"] {
-    background: linear-gradient(-45deg, #ed145b, #7b31f4);
-  }
 
-  
 
 @tailwind base;
 @tailwind components;

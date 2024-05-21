@@ -1,4 +1,4 @@
-dateModified: 1714721912
+dateModified: 1715832124
 elementSources:
   craft\elements\Entry:
     -
@@ -28,6 +28,25 @@ email:
   fromName: ubcaccs.ca
   transportType: craft\mail\transportadapters\Sendmail
 fs:
+  awsBucket:
+    hasUrls: true
+    name: 'AWS bucket'
+    settings:
+      addSubfolderToRootUrl: false
+      autoFocalPoint: false
+      bucket: $S3_BUCKET
+      bucketSelectionMode: manual
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: $CLOUDFRONT_PATH_PREFIX
+      expires: '3 months'
+      keyId: $S3_KEY_ID
+      makeUploadsPublic: false
+      region: $S3_REGION
+      secret: $S3_SECRET
+      storageClass: ''
+      subfolder: events
+    type: craft\awss3\Fs
+    url: $CLOUDFRONT_URL
   events:
     hasUrls: true
     name: Events
@@ -61,6 +80,11 @@ meta:
     d57181d9-bf62-4cd2-8922-f3f3ae7ee70f: Home # Home
     db94afb7-2344-4381-a3df-07d2072312a7: Events # Events
     f74056b2-a18d-487f-a906-bba51c8ff7ec: Home # Home
+plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
 system:
   edition: solo
   live: true
