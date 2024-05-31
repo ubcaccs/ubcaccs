@@ -6,6 +6,7 @@ var glide = new Glide(".glide", {
 	perView: 4,
 	focusAt: 'center',
 	keyboard: true,
-	gap: 20
+	gap: 20,
+	rewind: false,
   });
   glide.mount();
