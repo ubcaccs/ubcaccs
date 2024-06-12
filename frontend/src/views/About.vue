@@ -1,27 +1,23 @@
 <template>
  
-<div class="flex justify-around flex-wrap items-start pt-8 flex-grow">
+<div class="flex justify-center flex-wrap items-start pt-4 flex-grow pb-32">
     
-    <div class="align-start pm-5 pb-28 pt-16 pr-2">
-        <h1 class="text-off-white font-headerFont font-bold text-6xl text-left mb-4 max-w-[550px] leading-normal pb-2">
+    <div class="align-start pm-5 pt-4 pr-2">
+        <h1 class="text-off-white font-headerFont font-bold text-6xl text-left mb-4 max-w-[700px] leading-normal pb-2">
             About us
         </h1>
-        <p class="text-off-white text-[20px] text-left font-mainFont max-w-[550px] pb-8">
+        <p class="text-off-white text-[20px] text-left font-mainFont max-w-[700px] pb-8">
             At AccessCS, we believe in two paths: fostering short-term social support and advocating for long-term departmental change. Our events and gatherings provide opportunities to connect, share experiences, and build lasting relationships. Together, we navigate academic challenges and celebrate victories, creating a supportive environment for all. <br>
             <br>
             Join us in championing inclusivity, challenging ableism, and embracing diversity. Together, we're shaping a more equitable future for all!
         </p>
-        <button class="bg-off-white w-full rounded-lg py-2 flex justify-center">
-            <a href="#" class="text-[16px] font-headerFont py-2 px-3 text-center">Send us your ideas</a>
-            <div class="pt-[0.9em]">
-                <svg width="51" height="12" viewBox="0 0 51 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50.495 6.49497C50.7683 6.22161 50.7683 5.77839 50.495 5.50503L46.0402 1.05025C45.7668 0.776886 45.3236 0.776886 45.0503 1.05025C44.7769 1.32362 44.7769 1.76684 45.0503 2.0402L49.0101 6L45.0503 9.9598C44.7769 10.2332 44.7769 10.6764 45.0503 10.9497C45.3236 11.2231 45.7668 11.2231 46.0402 10.9497L50.495 6.49497ZM0 6.7H50V5.3H0V6.7Z" fill="black"/>
-                </svg>
-            </div>
-        </button>
     </div>
-    <img src="../images/events/social.jpeg" class="rounded-lg w-[500px] h-[400px] object-cover object-center shadow-lg">
-
+    <div class="py-8">
+        <div class="p-4 bg-navbar-blue rounded-[22px]">
+            <img src="../images/yearendphoto.jpeg" class="rounded-[10px] object-cover object-center max-w-[650px]">
+        </div>
+    </div>
+    
 
 </div>
 </template>

@@ -1,14 +1,15 @@
 
 <template>
-  <header>
+  <header class="fixed top-0 left-0 right-0 z-50">
     <link rel="stylesheet" href="./assets/output.css">
+    <Navbar></Navbar>
   </header>
 
 
 
   <main>
-    <div class="bg-gradient-to-t from-dark-blue from-20% via-[#06143B] via-60% to-navbar-blue to-80% h-svh">
-        <Navbar></Navbar>
+    <div class="bg-gradient-to-t from-dark-blue from-20% via-[#06143B] via-60% to-navbar-blue to-80% h-svh pt-28">
+        
         <Home></Home>
         <Events></Events>
         <About></About>
@@ -39,3 +40,22 @@
   }
 
 </script>
+<style>
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030B1F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EDF0F5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff,
+}
+
+</style>

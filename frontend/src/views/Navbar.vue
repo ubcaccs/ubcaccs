@@ -1,5 +1,5 @@
 <template>
-    <nav class="text-off-white text-base font-mainFont py-4">
+    <nav class="text-off-white text-base font-mainFont py-4 bg-navbar-blue">
             <div class="max-w-[48em] px-5">
                 <ul class="flex justify-between items-center">
                     <a href="#" class="hover:opacity-50">
