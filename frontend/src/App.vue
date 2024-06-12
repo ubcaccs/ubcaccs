@@ -2,18 +2,25 @@
 <template>
   <header class="fixed top-0 left-0 right-0 z-50">
     <link rel="stylesheet" href="./assets/output.css">
-    <Navbar></Navbar>
+    <Navbar @scrollTo="scrollToSection"></Navbar>
   </header>
 
 
 
   <main>
     <div class="bg-gradient-to-t from-dark-blue from-20% via-[#06143B] via-60% to-navbar-blue to-80% h-svh pt-28">
-        
+      <section ref="home">
         <Home></Home>
+      </section>
+      <section ref="events">
         <Events></Events>
+      </section>
+      <section ref="about">
         <About></About>
+      </section>
+      <section ref="contact">
         <Contact></Contact>
+      </section>
     </div>
   </main>
 
@@ -37,6 +44,11 @@
       About,
       Contact
     },
+    methods: {
+      scrollToSection(section) {
+        this.$refs[section].scrollIntoView({behavior: 'smooth'});
+      }
+    }
   }
 
 </script>
