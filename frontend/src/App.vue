@@ -19,11 +19,11 @@
 </template>
 
 <script>
-  import Navbar from "./components/Navbar.vue";
-  import Home from "./components/Home.vue";
-  import Events from "./components/Events.vue";
-  import About from "./components/About.vue";
-  import Contact from "./components/Contact.vue";
+  import Navbar from "./views/Navbar.vue";
+  import Home from "./views/Home.vue";
+  import Events from "./views/Events.vue";
+  import About from "./views/About.vue";
+  import Contact from "./views/Contact.vue";
 
 
   export default {
@@ -35,12 +35,6 @@
       Events,
       About,
       Contact
-    },
-
-    data () {
-      return {
-        description: 'hello world',
-      }
     },
   }
 

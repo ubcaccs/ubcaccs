@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Carousel from './carousel/Carousel.vue'
+import Carousel from '../components/Carousel.vue'
 export default {
     name: 'Events',
     components: {
