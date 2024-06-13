@@ -1,7 +1,7 @@
 <template>
 <div class="flex justify-around flex-wrap items-start pt-8 flex-grow">
 
-    <div class="align-start pm-5 pb-28 pt-16 pr-2">
+    <div class="align-start pm-5 pb-28 pt-20 pr-2">
         <h1 class="text-off-white font-headerFont font-bold text-6xl text-left mb-4 max-w-[550px] leading-normal pb-2">
         We want to hear your voice
         </h1>
@@ -9,7 +9,7 @@
         Help us making the UBC Computer Science Department more accessible, and join our community in the process!
         </p>
         <button class="bg-off-white w-full rounded-lg py-2 flex justify-center">
-            <a href="#" class="text-[16px] font-headerFont py-2 px-3 text-center">Send us your ideas</a>
+            <a class="text-[16px] font-headerFont py-2 px-3 text-center">Send us your ideas</a>
 
             <div class="pt-[0.9em]">
                 <svg width="51" height="12" viewBox="0 0 51 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,6 +71,6 @@
 
 <script>
 export default {
-    name: 'About',
+    name: 'Home',
 }
 </script>

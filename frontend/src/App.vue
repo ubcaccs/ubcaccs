@@ -46,7 +46,12 @@
     },
     methods: {
       scrollToSection(section) {
-        this.$refs[section].scrollIntoView({behavior: 'smooth'});
+        const target = this.$refs[section];
+        if (target) {
+          const navbarHeight = 75;
+          const targetPosition = target.offsetTop - navbarHeight;
+          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        }
       }
     }
   }

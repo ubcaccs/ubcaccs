@@ -1,9 +1,9 @@
 <template>
-    <div class="bg-dark-blue h-svh">
-        <h1 class="text-off-white font-headerFont font-bold text-6xl text-center pt-20 w-full">
+    <div class="bg-dark-blue pt-4">
+        <h1 class="text-off-white font-headerFont font-bold text-6xl text-center w-full">
             Events 
         </h1>
-        <div class="pt-32">
+        <div class="pt-20">
             <Carousel/>
         </div>
     </div>
