@@ -1,5 +1,5 @@
 columnSuffix: ajokvqus
-contentColumnType: text
+contentColumnType: string(600)
 fieldGroup: 087e0c6f-1168-48dd-b338-2bc4bdf4e93d # Events
 handle: description
 instructions: null
@@ -7,7 +7,7 @@ name: Description
 searchable: true
 settings:
   byteLimit: null
-  charLimit: null
+  charLimit: 150
   code: false
   columnType: null
   initialRows: 4

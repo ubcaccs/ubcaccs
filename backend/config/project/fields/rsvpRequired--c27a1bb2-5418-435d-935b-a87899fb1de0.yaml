@@ -1,0 +1,14 @@
+columnSuffix: inmrpabt
+contentColumnType: boolean
+fieldGroup: 087e0c6f-1168-48dd-b338-2bc4bdf4e93d # Events
+handle: rsvpRequired
+instructions: null
+name: 'RSVP Required'
+searchable: false
+settings:
+  default: true
+  offLabel: 'RSVP not required'
+  onLabel: 'RSVP required'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,4 +1,4 @@
-dateModified: 1715832124
+dateModified: 1718292350
 elementSources:
   craft\elements\Entry:
     -
@@ -74,11 +74,16 @@ meta:
     087e0c6f-1168-48dd-b338-2bc4bdf4e93d: Events # Events
     765c4e88-d809-4d54-80cc-57e653985857: About # About
     4501e90a-915d-4cd9-8d90-831f7592197a: Subtext # Subtext
+    aac04264-1752-4643-a708-e6c6020d1aa2: 'End Time' # End Time
+    b0c3c04f-de21-404d-a938-2def1f727a13: 'Begin Time ' # Begin Time 
     b9e65696-21d4-4990-a67a-05cd8555b297: Events # Events
+    c27a1bb2-5418-435d-935b-a87899fb1de0: 'RSVP Required' # RSVP Required
     cc729cab-7cdb-489c-ab4f-7a0b60e804e3: About # About
     d759efbd-e6b8-46d7-b600-312486821a48: Common # Common
     d57181d9-bf62-4cd2-8922-f3f3ae7ee70f: Home # Home
     db94afb7-2344-4381-a3df-07d2072312a7: Events # Events
+    dc2b295c-ecf2-4958-9687-2370da50ffa2: 'RSVP Link' # RSVP Link
+    ebb6874b-10e3-4867-95cc-b3c079c408e2: Date # Date
     f74056b2-a18d-487f-a906-bba51c8ff7ec: Home # Home
 plugins:
   aws-s3:

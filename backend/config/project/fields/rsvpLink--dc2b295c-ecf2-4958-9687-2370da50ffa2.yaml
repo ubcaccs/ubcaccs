@@ -1,0 +1,14 @@
+columnSuffix: adowgtlm
+contentColumnType: string(255)
+fieldGroup: 087e0c6f-1168-48dd-b338-2bc4bdf4e93d # Events
+handle: rsvpLink
+instructions: 'Provide RSVP link.'
+name: 'RSVP Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

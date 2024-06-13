@@ -58,7 +58,7 @@ fieldLayouts:
         name: Content
         uid: fdbff045-cab1-42dc-ae29-9dbba859c671
         userCondition: null
-fs: awsBucket
+fs: events
 handle: events
 name: Events
 sortOrder: 1

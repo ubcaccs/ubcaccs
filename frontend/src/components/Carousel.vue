@@ -60,7 +60,7 @@ export default {
       type: 'slider',
       startAt: 0,
       focusAt: 'center',
-      perView: 1,
+      perView: 2,
       keyboard: true,
       gap: 20,
       rewind: false,

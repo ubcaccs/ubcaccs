@@ -1,0 +1,14 @@
+columnSuffix: wcovtywd
+contentColumnType: time
+fieldGroup: 087e0c6f-1168-48dd-b338-2bc4bdf4e93d # Events
+handle: beginTime
+instructions: null
+name: 'Begin Time '
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Time

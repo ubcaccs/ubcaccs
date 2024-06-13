@@ -36,7 +36,7 @@ fieldLayouts:
             fieldUid: 5edf3f64-12fc-4fd8-aa67-1f3ea36616e8 # Description
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 2227a2b7-3ec2-4f4c-afb6-df3886131e26
@@ -48,10 +48,79 @@ fieldLayouts:
             fieldUid: 7f94ca16-453f-4ff9-84b4-1154a8a813d2 # Event Image
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 24e7ad3f-edf0-438f-8b11-1f673e690c6f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ebb6874b-10e3-4867-95cc-b3c079c408e2 # Date
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5e2704b8-5b78-4e83-8a12-576d70011126
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b0c3c04f-de21-404d-a938-2def1f727a13 # Begin Time 
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 062fcb89-c571-410e-ab07-66d0ba426d16
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: aac04264-1752-4643-a708-e6c6020d1aa2 # End Time
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b0763bc-94be-4c78-8af1-3cf0ae042e2f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c27a1bb2-5418-435d-935b-a87899fb1de0 # RSVP Required
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4af5033e-3a9a-4df6-aed7-b65211eed4ea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: c27a1bb2-5418-435d-935b-a87899fb1de0 # RSVP Required
+                  uid: 91a835ac-68b3-41bf-be02-93c9395b9709
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: dc2b295c-ecf2-4958-9687-2370da50ffa2 # RSVP Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc68e359-592f-4589-b8af-13525df414b6
             userCondition: null
             warning: null
             width: 100
