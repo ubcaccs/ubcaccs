@@ -48,7 +48,7 @@
       scrollToSection(section) {
         const target = this.$refs[section];
         if (target) {
-          const navbarHeight = 75;
+          const navbarHeight = 85;
           const targetPosition = target.offsetTop - navbarHeight;
           window.scrollTo({ top: targetPosition, behavior: 'smooth' });
         }
