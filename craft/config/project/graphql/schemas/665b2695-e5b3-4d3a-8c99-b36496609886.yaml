@@ -1,0 +1,32 @@
+isPublic: false
+name: 'Frontend Schema'
+scope:
+  - 'sites.025f765b-22cc-4651-a46e-0da4cba5388d:read' # ubcaccs.ca
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'sections.765c4e88-d809-4d54-80cc-57e653985857:read' # About
+  - 'entrytypes.cc729cab-7cdb-489c-ab4f-7a0b60e804e3:read' # About
+  - 'sections.71b7a124-0908-470a-90c9-ddb43c64eabd:read' # Events
+  - 'entrytypes.db94afb7-2344-4381-a3df-07d2072312a7:read' # Events
+  - 'sections.d57181d9-bf62-4cd2-8922-f3f3ae7ee70f:read' # Home
+  - 'entrytypes.f74056b2-a18d-487f-a906-bba51c8ff7ec:read' # Home
+  - 'volumes.b9e65696-21d4-4990-a67a-05cd8555b297:read' # Events
+  - 'volumes.0d40cb9c-a6c7-40fd-a46a-37fbb4c2f761:read' # Favicon
+  - 'sections.765c4e88-d809-4d54-80cc-57e653985857:edit' # About
+  - 'entrytypes.cc729cab-7cdb-489c-ab4f-7a0b60e804e3:save' # About
+  - 'sections.71b7a124-0908-470a-90c9-ddb43c64eabd:edit' # Events
+  - 'entrytypes.db94afb7-2344-4381-a3df-07d2072312a7:edit' # Events
+  - 'entrytypes.db94afb7-2344-4381-a3df-07d2072312a7:create' # Events
+  - 'entrytypes.db94afb7-2344-4381-a3df-07d2072312a7:save' # Events
+  - 'entrytypes.db94afb7-2344-4381-a3df-07d2072312a7:delete' # Events
+  - 'sections.d57181d9-bf62-4cd2-8922-f3f3ae7ee70f:edit' # Home
+  - 'entrytypes.f74056b2-a18d-487f-a906-bba51c8ff7ec:save' # Home
+  - 'volumes.b9e65696-21d4-4990-a67a-05cd8555b297:edit' # Events
+  - 'volumes.b9e65696-21d4-4990-a67a-05cd8555b297:create' # Events
+  - 'volumes.b9e65696-21d4-4990-a67a-05cd8555b297:save' # Events
+  - 'volumes.b9e65696-21d4-4990-a67a-05cd8555b297:delete' # Events
+  - 'volumes.0d40cb9c-a6c7-40fd-a46a-37fbb4c2f761:edit' # Favicon
+  - 'volumes.0d40cb9c-a6c7-40fd-a46a-37fbb4c2f761:create' # Favicon
+  - 'volumes.0d40cb9c-a6c7-40fd-a46a-37fbb4c2f761:save' # Favicon
+  - 'volumes.0d40cb9c-a6c7-40fd-a46a-37fbb4c2f761:delete' # Favicon

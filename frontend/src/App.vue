@@ -21,6 +21,7 @@
       <section ref="contact">
         <Contact></Contact>
       </section>
+      <GraphQL></GraphQL>
     </div>
   </main>
 
@@ -32,6 +33,7 @@
   import Events from "./views/Events.vue";
   import About from "./views/About.vue";
   import Contact from "./views/Contact.vue";
+  import GraphQL from "./models/GraphQL.vue"
 
 
   export default {
@@ -42,7 +44,8 @@
       Home, 
       Events,
       About,
-      Contact
+      Contact,
+      GraphQL
     },
     methods: {
       scrollToSection(section) {

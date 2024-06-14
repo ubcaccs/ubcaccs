@@ -1,4 +1,4 @@
-dateModified: 1718292350
+dateModified: 1718321776
 elementSources:
   craft\elements\Entry:
     -
@@ -72,6 +72,7 @@ meta:
     59ef1311-cc39-4344-a00d-5fa511f77a36: '350x350 Event' # 350x350 Event
     71b7a124-0908-470a-90c9-ddb43c64eabd: Events # Events
     087e0c6f-1168-48dd-b338-2bc4bdf4e93d: Events # Events
+    665b2695-e5b3-4d3a-8c99-b36496609886: 'Frontend Schema' # Frontend Schema
     765c4e88-d809-4d54-80cc-57e653985857: About # About
     4501e90a-915d-4cd9-8d90-831f7592197a: Subtext # Subtext
     aac04264-1752-4643-a708-e6c6020d1aa2: 'End Time' # End Time

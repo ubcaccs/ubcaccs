@@ -33,4 +33,5 @@ return GeneralConfig::create()
     ->enableGql(true)
     // change the default trigger word
     ->cpTrigger("admin-accs")
+    ->headlessMode(true)
 ;
