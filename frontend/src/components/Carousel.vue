@@ -6,8 +6,8 @@
       <!-- ---------------  Slider  ---------------- -->
       <div class="glide__track px-8" data-glide-el="track">
         <ul class="glide__slides">
-          <li v-for="event in events" :key="event.name" class="glide__slide fixed-slide">
-            <Event :name="event.name" :description="event.description" :image="event.image"></Event>
+          <li v-for="event in events" :key="event.title" class="glide__slide fixed-slide">
+            <Event :name="event.title" :description="event.description" :image="event.eventImage[0].url"></Event>
           </li>
         </ul>
       </div>
@@ -36,35 +36,69 @@ export default {
   },
   data() {
     return {
-      events: [
-        {name: "Kick-off Event", 
-        description: "We're thrilled to invite everyone to CS Departments new disability affinity group's upcoming kick-off event 🎊!", 
-        image: "src/images/events/kickoff.jpg"},
-
-        {name: "Bi-weekly Social", 
-        description: "Join us this Thursday for an inclusive afternoon of socializing, puzzles, and snacks! 🧩🍿✨ AccessCS's goal is to foster a community where we can share our thoughts and experiences. Let's connect, puzzle, and snack together!", 
-        image: "src/images/events/social.jpeg"},
-        
-        {name: "Event 1", 
-        description: "Hi everyone! The location for our social has been updated to be a larger room, in ICCS 304. Here are the updated details:", 
-        image: "src/images/events/social2.png"},
-
-        {name: "Event 1", description: "This is a description of event 1", image: "src/images/events/year-end.jpeg"},
-        {name: "Event 1", description: "This is a description of event 1", image: "src/images/events/year-end.jpeg"},
-        {name: "Event 1", description: "This is a description of event 1", image: "src/images/events/year-end.jpeg"}
-      ]
+      events: []
     };
   },
-  mounted() {
-    new Glide(".glide", {
-      type: 'slider',
-      startAt: 0,
-      focusAt: 'center',
-      perView: 2,
-      keyboard: true,
-      gap: 20,
-      rewind: false,
-    }).mount();
+  created() {
+    this.fetchGraphQLData().then(() => {
+      this.initializeGlide();
+    });
+  },
+
+  methods: {
+    async fetchGraphQLData() {
+      const token = import.meta.env.VITE_GRAPHQL_TOKEN
+      const query = `
+      {
+        entries (section: "events", limit: 2, orderBy: "date DESC") {
+            title
+            ... on events_events_Entry {
+            description
+            eventImage {
+                url @transform (width: 350)
+            }
+            beginTime
+            endTime
+                rsvpRequired
+            rsvpLink
+            }
+        }
+      }
+      `;
+
+      try {
+        const response = await fetch('https://ubcaccs.ddev.site/api', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': token,
+          },
+          body: JSON.stringify({ query }),
+        });
+
+        const result = await response.json();
+        const data = result.data.entries;
+        this.events = data;
+        console.log(data)
+        console.log(this.events)
+
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+   },
+   initializeGlide() {
+      this.$nextTick(() => {
+        new Glide(".glide", {
+          type: 'slider',
+          startAt: 0,
+          focusAt: 'center',
+          perView: 2,
+          keyboard: true,
+          gap: 20,
+          rewind: false,
+        }).mount();
+      });
+    }
   }
 };
 </script>
