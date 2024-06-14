@@ -5,8 +5,29 @@
 
 <script>
 import axios from 'axios';
+import { fetchGraphQLData } from '../utils/query.js'; 
+const query = `
+    {
+      entries (section: "events", orderBy: "date DESC") {
+          title
+          ... on events_events_Entry {
+          description
+          eventImage {
+              url @transform (width: 300)
+          }
+          beginTime
+          endTime
+              rsvpRequired
+          rsvpLink
+          }
+      }
+    }
+    `;
+const data = await fetchGraphQLData(query);
+console.log(data);
 
 export default {
+
 name: 'GraphQL',
 data() {
   return {
@@ -15,14 +36,14 @@ data() {
   };
 },
 created() {
-  this.fetchGraphQLData();
+    this.title = data[0].title;
 },
 methods: {
   async fetchGraphQLData() {
     const token = import.meta.env.VITE_GRAPHQL_TOKEN
     const query = `
     {
-      entries (section: "events", limit: 2, orderBy: "date DESC") {
+      entries (section: "events", orderBy: "date DESC") {
           title
           ... on events_events_Entry {
           description

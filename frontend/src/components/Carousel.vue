@@ -28,6 +28,7 @@
 <script>
 import Glide from "@glidejs/glide";
 import Event from "./Event.vue";
+import { fetchGraphQLData } from '../utils/query.js'; 
 
 export default {
   name: 'Carousel',
@@ -40,50 +41,37 @@ export default {
     };
   },
   created() {
-    this.fetchGraphQLData().then(() => {
+    this.initEvents().then(() => {
       this.initializeGlide();
     });
   },
 
   methods: {
-    async fetchGraphQLData() {
-      const token = import.meta.env.VITE_GRAPHQL_TOKEN
+    async initEvents() {
+
       const query = `
-      {
-        entries (section: "events", limit: 2, orderBy: "date DESC") {
-            title
-            ... on events_events_Entry {
-            description
-            eventImage {
-                url @transform (width: 350)
+            {
+              entries (section: "events", orderBy: "date DESC") {
+                  title
+                  ... on events_events_Entry {
+                  description
+                  eventImage {
+                      url @transform (width: 350)
+                  }
+                  beginTime
+                  endTime
+                      rsvpRequired
+                  rsvpLink
+                  }
+              }
             }
-            beginTime
-            endTime
-                rsvpRequired
-            rsvpLink
-            }
-        }
-      }
-      `;
+            `;
 
       try {
-        const response = await fetch('https://ubcaccs.ddev.site/api', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': token,
-          },
-          body: JSON.stringify({ query }),
-        });
-
-        const result = await response.json();
-        const data = result.data.entries;
-        this.events = data;
-        console.log(data)
-        console.log(this.events)
-
+        const response = await fetchGraphQLData(query);
+        this.events = response;
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error(error);
       }
    },
    initializeGlide() {

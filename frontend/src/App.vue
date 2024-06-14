@@ -21,7 +21,6 @@
       <section ref="contact">
         <Contact></Contact>
       </section>
-      <GraphQL></GraphQL>
     </div>
   </main>
 

@@ -3,12 +3,12 @@
 
     <div class="align-start pm-5 pb-28 pt-24 pr-2">
         <h1 class="text-off-white font-headerFont font-bold text-6xl text-left mb-4 max-w-[550px] leading-normal pb-2">
-        We want to hear your voice
+        {{ title }}
         </h1>
         <p class="text-off-white text-[20px] text-left font-mainFont max-w-[550px] pb-8">
-        Help us making the UBC Computer Science Department more accessible, and join our community in the process!
+        {{ subtext}}
         </p>
-        <button class="bg-off-white w-full rounded-lg py-2 flex justify-center">
+        <button @click="openSurvey" class="bg-off-white w-full rounded-lg py-2 flex justify-center">
             <a class="text-[16px] font-headerFont py-2 px-3 text-center">Send us your ideas</a>
 
             <div class="pt-[0.9em]">
@@ -24,10 +24,41 @@
 
 <script>
 import Microphone from '../assets/Microphone.vue'
-export default {
+import { fetchGraphQLData } from '../utils/query.js'; 
+const query = `
+    {
+        entries(section: "Home", orderBy: "date DESC") {
+            title
+            ... on home_home_Entry {
+            subtext
+            surveyUrl
+            }
+        }
+    }
+    `;
+const data = await fetchGraphQLData(query);
+
+export default {    
     name: 'Home',
+    data () {
+        return {
+            title: '',
+            subtext: '',
+            surveyUrl: ''
+        };
+    },
     components: {
         Microphone
+    },
+    created () {
+        this.title = data[0].title;
+        this.subtext = data[0].subtext;
+        this.surveyUrl = data[0].surveyUrl;
+    },
+    methods: {
+        openSurvey() {
+            window.open(this.surveyUrl, '_blank');
+        }
     }
 
 }

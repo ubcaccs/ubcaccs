@@ -33,13 +33,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 5edf3f64-12fc-4fd8-aa67-1f3ea36616e8 # Description
+            fieldUid: 4501e90a-915d-4cd9-8d90-831f7592197a # Subtext
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 951e546a-331e-4325-ada4-8369fe437553
+            uid: cb6789ae-bb8e-4314-a385-97c14cfb47b4
             userCondition: null
             warning: null
             width: 100

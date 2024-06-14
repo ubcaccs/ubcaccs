@@ -6,8 +6,8 @@ instructions: null
 name: 'Begin Time '
 searchable: false
 settings:
-  max: null
-  min: null
+  max: '21:00'
+  min: '06:00'
   minuteIncrement: 30
 translationKeyFormat: null
 translationMethod: none

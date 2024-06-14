@@ -1,4 +1,4 @@
-dateModified: 1718321776
+dateModified: 1718403217
 elementSources:
   craft\elements\Entry:
     -
@@ -69,6 +69,7 @@ meta:
     06c4324d-71fe-476a-9b1f-3e6feaecf1ac: 'Public Schema' # Public Schema
     7f94ca16-453f-4ff9-84b4-1154a8a813d2: 'Event Image' # Event Image
     025f765b-22cc-4651-a46e-0da4cba5388d: ubcaccs.ca # ubcaccs.ca
+    53e8b5f5-cedf-4544-b9ca-38f645b7dd6c: 'Survey URL' # Survey URL
     59ef1311-cc39-4344-a00d-5fa511f77a36: '350x350 Event' # 350x350 Event
     71b7a124-0908-470a-90c9-ddb43c64eabd: Events # Events
     087e0c6f-1168-48dd-b338-2bc4bdf4e93d: Events # Events
