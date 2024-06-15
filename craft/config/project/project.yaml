@@ -1,4 +1,4 @@
-dateModified: 1718403217
+dateModified: 1718408059
 elementSources:
   craft\elements\Entry:
     -
@@ -67,6 +67,7 @@ meta:
     5e93ae0f-d6a1-4d7f-88d7-37a8f2c68196: ubcaccs.ca # ubcaccs.ca
     5edf3f64-12fc-4fd8-aa67-1f3ea36616e8: Description # Description
     06c4324d-71fe-476a-9b1f-3e6feaecf1ac: 'Public Schema' # Public Schema
+    7d6d063d-a4d6-4171-a7a3-99f92cf36472: Contact # Contact
     7f94ca16-453f-4ff9-84b4-1154a8a813d2: 'Event Image' # Event Image
     025f765b-22cc-4651-a46e-0da4cba5388d: ubcaccs.ca # ubcaccs.ca
     53e8b5f5-cedf-4544-b9ca-38f645b7dd6c: 'Survey URL' # Survey URL
@@ -76,15 +77,20 @@ meta:
     665b2695-e5b3-4d3a-8c99-b36496609886: 'Frontend Schema' # Frontend Schema
     765c4e88-d809-4d54-80cc-57e653985857: About # About
     4501e90a-915d-4cd9-8d90-831f7592197a: Subtext # Subtext
+    17225af9-d8fa-496e-84de-b0932e0cb269: LinkedIn # LinkedIn
+    60328176-6db4-4d10-b844-6100d1446ee8: Email # Email
     aac04264-1752-4643-a708-e6c6020d1aa2: 'End Time' # End Time
     b0c3c04f-de21-404d-a938-2def1f727a13: 'Begin Time ' # Begin Time 
     b9e65696-21d4-4990-a67a-05cd8555b297: Events # Events
+    c3e93172-32cc-4582-897b-4fec759ed794: Contact # Contact
     c27a1bb2-5418-435d-935b-a87899fb1de0: 'RSVP Required' # RSVP Required
     cc729cab-7cdb-489c-ab4f-7a0b60e804e3: About # About
     d759efbd-e6b8-46d7-b600-312486821a48: Common # Common
     d57181d9-bf62-4cd2-8922-f3f3ae7ee70f: Home # Home
     db94afb7-2344-4381-a3df-07d2072312a7: Events # Events
     dc2b295c-ecf2-4958-9687-2370da50ffa2: 'RSVP Link' # RSVP Link
+    e015fc6d-4621-42ae-9fc7-aeb4bb2ab82d: 'Discord Link' # Discord Link
+    e96f6721-be18-4ff8-8aab-4121f8e8a14a: 'Instagram Link' # Instagram Link
     ebb6874b-10e3-4867-95cc-b3c079c408e2: Date # Date
     f74056b2-a18d-487f-a906-bba51c8ff7ec: Home # Home
 plugins:

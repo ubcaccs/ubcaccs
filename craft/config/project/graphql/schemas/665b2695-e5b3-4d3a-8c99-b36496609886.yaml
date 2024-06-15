@@ -7,6 +7,8 @@ scope:
   - 'elements.inactive:read'
   - 'sections.765c4e88-d809-4d54-80cc-57e653985857:read' # About
   - 'entrytypes.cc729cab-7cdb-489c-ab4f-7a0b60e804e3:read' # About
+  - 'sections.c3e93172-32cc-4582-897b-4fec759ed794:read' # Contact
+  - 'entrytypes.7d6d063d-a4d6-4171-a7a3-99f92cf36472:read' # Contact
   - 'sections.71b7a124-0908-470a-90c9-ddb43c64eabd:read' # Events
   - 'entrytypes.db94afb7-2344-4381-a3df-07d2072312a7:read' # Events
   - 'sections.d57181d9-bf62-4cd2-8922-f3f3ae7ee70f:read' # Home
@@ -15,6 +17,8 @@ scope:
   - 'volumes.0d40cb9c-a6c7-40fd-a46a-37fbb4c2f761:read' # Favicon
   - 'sections.765c4e88-d809-4d54-80cc-57e653985857:edit' # About
   - 'entrytypes.cc729cab-7cdb-489c-ab4f-7a0b60e804e3:save' # About
+  - 'sections.c3e93172-32cc-4582-897b-4fec759ed794:edit' # Contact
+  - 'entrytypes.7d6d063d-a4d6-4171-a7a3-99f92cf36472:save' # Contact
   - 'sections.71b7a124-0908-470a-90c9-ddb43c64eabd:edit' # Events
   - 'entrytypes.db94afb7-2344-4381-a3df-07d2072312a7:edit' # Events
   - 'entrytypes.db94afb7-2344-4381-a3df-07d2072312a7:create' # Events

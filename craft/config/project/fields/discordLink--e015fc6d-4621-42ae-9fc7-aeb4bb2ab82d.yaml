@@ -1,0 +1,14 @@
+columnSuffix: rgopatbm
+contentColumnType: string(255)
+fieldGroup: d759efbd-e6b8-46d7-b600-312486821a48 # Common
+handle: discordLink
+instructions: null
+name: 'Discord Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

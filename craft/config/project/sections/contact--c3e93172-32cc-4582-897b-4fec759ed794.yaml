@@ -1,12 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: about
-name: About
+handle: contact
+name: Contact
 propagationMethod: all
 siteSettings:
   025f765b-22cc-4651-a46e-0da4cba5388d: # ubcaccs.ca
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: about
+    uriFormat: contact-page
 type: single

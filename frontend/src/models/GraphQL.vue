@@ -24,7 +24,7 @@ const query = `
     }
     `;
 const data = await fetchGraphQLData(query);
-console.log(data);
+
 
 export default {
 
