@@ -10,7 +10,7 @@
       </h1>
       <div class="flex gap-6 flex-wrap justify-center pb-8">
         <!---Instagram--->
-        <button @click="openLink(instagram)"
+        <button @click="openLink(instagram)" aria-label="Instagram"
           class="flex items-center bg-dark-blue pt-2 pb-1 pl-2 pr-4 rounded-lg"
         >
           <span class="[&>svg]:h-6 [&>svg]:w-6 pb-1 pr-1">
@@ -27,7 +27,7 @@
           <Instagram />
         </button>
         <!--Discord-->
-        <button @click="openLink(discord)"
+        <button @click="openLink(discord)" aria-label="Discord"
           class="flex items-center bg-dark-blue pt-2 pb-1 pl-2 pr-4 rounded-lg"
         >
           <span class="[&>svg]:h-6 [&>svg]:w-6 pb-1 pr-2">
@@ -44,7 +44,7 @@
           <p class="font-discord text-off-white text-[17px]">Discord</p>
         </button>
         <!--LinkedIn-->
-        <button @click="openLink(linkedin)"
+        <button @click="openLink(linkedin)" aria-label="LinkedIn"
           class="flex items-center bg-dark-blue pt-2 pb-[0.3rem] px-5 rounded-lg"
         >
           <p class="text-off-white text-[21px] font-semibold">Linked</p>
@@ -59,7 +59,7 @@
           </span>
         </button>
         <!-- Email -->
-        <button @click="openLink(email)"
+        <button @click="openLink(email)" aria-label="Email"
           class="flex items-center bg-dark-blue pt-2 pb-[0.3rem] px-5 rounded-lg"
         >
           <svg
@@ -104,7 +104,6 @@ const query = `
   }
 }`;
 const data = await fetchGraphQLData(query);
-console.log(data);
 
 export default {
   name: "Contact",

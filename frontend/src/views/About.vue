@@ -16,7 +16,7 @@
         class="p-4 bg-navbar-blue rounded-[22px] max-w-[650px] w-full mx-auto"
       >
         <img
-          src="../images/yearendphoto.jpeg"
+          src="../images/yearendphoto.jpeg" alt="Year End Photo"
           class="rounded-[10px] object-cover object-center max-w-full w-full"
         />
       </div>
