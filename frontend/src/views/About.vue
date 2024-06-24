@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-wrap justify-center items-start flex-grow pb-32 py-24">
-    <div class="align-start pr-2 max-w-[700px] w-full">
+  <div class="flex flex-wrap justify-center items-start flex-grow pb-32 py-24 px-2">
+    <div class="align-start pr-2 max-w-[700px] w-full ">
       <h1
         class="text-off-white font-headerFont font-bold text-6xl text-left mb-8 leading-normal pb-2"
       >
