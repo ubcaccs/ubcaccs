@@ -8,6 +8,6 @@ This is the club's official website, built with Vue.js for the frontend and Craf
 - Contact form
 
 ## Technologies Used
-- **Frontend:** Vue.js, Vue Router, Vuex
-- **Backend:** Craft CMS (headless mode)
+- **Frontend:** Vue.js
+- **Backend:** Craft CMS (headless mode), AWS S3
 - **Styling:** Tailwind CSS
