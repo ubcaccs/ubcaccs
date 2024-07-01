@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-dark-blue pt-4">
+    <div class="bg-dark-blue pt-8">
         <h1 class="text-off-white font-headerFont font-bold text-6xl text-center w-full">
             Events 
         </h1>
