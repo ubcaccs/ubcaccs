@@ -15,7 +15,8 @@ export default {
       fontFamily: {
         headerFont: ['Hiragino Kaku Gothic Std'],
         mainFont: ["Hiragino Maru Gothic ProN"],
-        discord: ["Black Han Sans"]
+        discord: ["Black Han Sans"],
+        instagram: ["Lobster"],
 
       },
     },

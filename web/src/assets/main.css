@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .logo-image {
   padding-top: 0.5em; /* Adjust the value as needed */
 }

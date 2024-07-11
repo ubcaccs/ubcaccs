@@ -10,8 +10,10 @@
       </h1>
       <div class="flex gap-6 flex-wrap justify-center pb-8">
         <!---Instagram--->
-        <button @click="openLink(instagram)" aria-label="Instagram"
-          class="flex items-center bg-dark-blue pt-2 pb-1 pl-2 pr-4 rounded-lg"
+        <button
+          @click="openLink(instagram)"
+          aria-label="Instagram"
+          class="flex items-center bg-dark-blue pt-2 pb-1 pl-2 pr-4 rounded-lg h-[50px] w-[145px]"
         >
           <span class="[&>svg]:h-6 [&>svg]:w-6 pb-1 pr-1">
             <svg
@@ -24,10 +26,16 @@
               />
             </svg>
           </span>
-          <Instagram />
+          <img
+            src="https://download.logo.wine/logo/Instagram/Instagram-Wordmark-White-Logo.wine.png"
+            alt="Contact us"
+            class="w-[100px] h-[80px] pt-[0.1em] object-cover"
+          />
         </button>
         <!--Discord-->
-        <button @click="openLink(discord)" aria-label="Discord"
+        <button
+          @click="openLink(discord)"
+          aria-label="Discord"
           class="flex items-center bg-dark-blue pt-2 pb-1 pl-2 pr-4 rounded-lg"
         >
           <span class="[&>svg]:h-6 [&>svg]:w-6 pb-1 pr-2">
@@ -44,7 +52,9 @@
           <p class="font-discord text-off-white text-[17px]">Discord</p>
         </button>
         <!--LinkedIn-->
-        <button @click="openLink(linkedin)" aria-label="LinkedIn"
+        <button
+          @click="openLink(linkedin)"
+          aria-label="LinkedIn"
           class="flex items-center bg-dark-blue pt-2 pb-[0.3rem] px-5 rounded-lg"
         >
           <p class="text-off-white text-[21px] font-semibold">Linked</p>
@@ -59,7 +69,9 @@
           </span>
         </button>
         <!-- Email -->
-        <button @click="openLink(email)" aria-label="Email"
+        <button
+          @click="openLink(email)"
+          aria-label="Email"
           class="flex items-center bg-dark-blue pt-2 pb-[0.3rem] px-5 rounded-lg"
         >
           <svg
@@ -91,6 +103,7 @@
 import "@fontsource/black-han-sans";
 import Instagram from "../assets/Instagram.vue";
 import { fetchGraphQLData } from "../utils/query.js";
+
 const query = `
 {
   entries(section: "Contact", orderBy: "date DESC") {
@@ -132,4 +145,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+</style>

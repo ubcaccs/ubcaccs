@@ -17,5 +17,5 @@ npm run build
 
 # Update Tailwind CSS
 ```sh
-npx tailwindcss -i ./web/css/input.css -o ./web/css/output.css --watch
+npx tailwindcss -i ./src/assets/main.css -o ./src/assets/output.css --watch
 ```
