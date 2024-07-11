@@ -16,8 +16,6 @@ export default {
         headerFont: ['Hiragino Kaku Gothic Std'],
         mainFont: ["Hiragino Maru Gothic ProN"],
         discord: ["Black Han Sans"],
-        instagram: ["Lobster"],
-
       },
     },
   },
