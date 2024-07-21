@@ -1,5 +1,5 @@
 ![](homepage.png)
-This is the club's official website, built with Vue.js for the frontend and Craft CMS as a headless backend. It provides information about the club, events, members, and more.
+UBC AccessCS is a community dedicated to creating a welcoming space in UBC's Computer Science department for everyone! This is the club's official website, built with Vue.js for the frontend and Craft CMS as a headless backend. It provides information about the club, events, members, and more.
 
 ## Features
 - Dynamic content with Craft CMS
