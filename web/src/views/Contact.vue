@@ -101,7 +101,7 @@
 
 <script>
 import "@fontsource/black-han-sans";
-import Instagram from "../assets/Instagram.vue";
+//import Instagram from "../assets/Instagram.vue";
 import { fetchGraphQLData } from "../utils/query.js";
 
 const query = `
@@ -120,9 +120,6 @@ const data = await fetchGraphQLData(query);
 
 export default {
   name: "Contact",
-  components: {
-    Instagram,
-  },
   data() {
     return {
       instagram: "",
