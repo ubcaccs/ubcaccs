@@ -1,7 +1,6 @@
 
 <template>
   <header class="fixed top-0 left-0 right-0 z-50">
-    <link rel="stylesheet" href="./assets/output.css">
     <Navbar @scrollTo="scrollToSection"></Navbar>
   </header>
 
