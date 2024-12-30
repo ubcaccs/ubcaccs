@@ -7,10 +7,14 @@ RUN apt-get update && apt-get install -y \
     libjpeg-dev \
     libfreetype6-dev \
     libzip-dev \
+    libpq-dev \
+    libicu-dev \
     unzip \
     git \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install pdo_mysql zip gd
+    && docker-php-ext-install pdo_pgsql zip gd bcmath intl
+
+
 
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
@@ -25,7 +29,7 @@ COPY . .
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 # Install PHP dependencies
-RUN composer install
+RUN composer install --no-interaction --verbose --profile
 
 # Set permissions for Craft
 RUN chown -R www-data:www-data /var/www/html \
