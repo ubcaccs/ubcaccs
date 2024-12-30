@@ -2,7 +2,7 @@
 export async function fetchGraphQLData(query) {
     const token = import.meta.env.VITE_GRAPHQL_TOKEN
     try {
-        const response = await fetch('https://ubcaccs.onrender.com/api', {
+        const response = await fetch('https://ubcaccs-craft.onrender.com/api', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
