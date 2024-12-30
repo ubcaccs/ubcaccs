@@ -28,8 +28,10 @@ COPY . .
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
+RUN composer require craftcms/aws-s3 --no-interaction
+
 # Install PHP dependencies
-RUN composer install --no-interaction --verbose --profile
+RUN composer install
 
 # Set permissions for Craft
 RUN chown -R www-data:www-data /var/www/html \
