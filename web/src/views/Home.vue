@@ -23,11 +23,11 @@
 </template>
 
 <script>
-import Microphone from '../assets/Microphone.vue'
+import Microphone from '../../public/assets/Microphone.vue';
 import { fetchGraphQLData } from '../utils/query.js'; 
 const query = `
 {
-    entries {
+    homeEntries {
         ... on home_home_Entry {
         title
         subtext
@@ -37,7 +37,7 @@ const query = `
 }`;
 
 const response = await fetchGraphQLData(query);
-const data = response.entries;
+const data = response.homeEntries[0];
 
 export default {    
     name: 'Home',
@@ -52,9 +52,9 @@ export default {
         Microphone
     },
     created () {
-        this.title = data[4].title;
-        this.subtext = data[4].subtext;
-        this.surveyUrl = data[4].surveyUrl;
+        this.title = data.title;
+        this.subtext = data.subtext;
+        this.surveyUrl = data.surveyUrl;
     },
     methods: {
         openSurvey() {
