@@ -26,17 +26,18 @@
 import Microphone from '../assets/Microphone.vue'
 import { fetchGraphQLData } from '../utils/query.js'; 
 const query = `
-    {
-        entries(section: "Home", orderBy: "date DESC") {
-            title
-            ... on home_home_Entry {
-            subtext
-            surveyUrl
-            }
+{
+    entries {
+        ... on home_home_Entry {
+        title
+        subtext
+        surveyUrl
         }
     }
-    `;
-const data = await fetchGraphQLData(query);
+}`;
+
+const response = await fetchGraphQLData(query);
+const data = response.entries;
 
 export default {    
     name: 'Home',
@@ -51,9 +52,9 @@ export default {
         Microphone
     },
     created () {
-        this.title = data[0].title;
-        this.subtext = data[0].subtext;
-        this.surveyUrl = data[0].surveyUrl;
+        this.title = data[4].title;
+        this.subtext = data[4].subtext;
+        this.surveyUrl = data[4].surveyUrl;
     },
     methods: {
         openSurvey() {

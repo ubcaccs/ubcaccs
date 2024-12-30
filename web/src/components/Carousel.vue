@@ -65,9 +65,9 @@ export default {
     async initEvents() {
       const query = `
             {
-              entries (section: "events", orderBy: "date DESC") {
-                  title
+              eventsEntries (orderBy: "date DESC") {
                   ... on events_events_Entry {
+                  title
                   description
                   eventImage {
                       url @transform (width: 350)
@@ -84,7 +84,8 @@ export default {
 
       try {
         const response = await fetchGraphQLData(query);
-        this.events = response;
+        const data = response.eventsEntries;
+        this.events = data;
       } catch (error) {
         console.error(error);
       }

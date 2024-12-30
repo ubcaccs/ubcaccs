@@ -12,7 +12,7 @@ export async function fetchGraphQLData(query) {
         });
   
         const result = await response.json();
-        return result.data.entries;
+        return result.data;
   
       } catch (error) {
         console.error('Error fetching data:', error);

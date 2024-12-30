@@ -28,15 +28,16 @@
 import { fetchGraphQLData } from "../utils/query.js";
 const query = `
     {
-        entries(section: "About", orderBy: "date DESC") {
-            title
+        entries(orderBy: "date DESC") {
             ... on about_about_Entry {
+            title
             subtext
             }
         }
     }
     `;
-const data = await fetchGraphQLData(query);
+const response = await fetchGraphQLData(query);
+const data = response.entries;
 
 export default {
   name: "About",
@@ -46,7 +47,7 @@ export default {
     };
   },
   created() {
-    this.description = data[0].subtext;
+    this.description = data[2].subtext;
   },
 };
 </script>

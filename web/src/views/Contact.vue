@@ -106,9 +106,9 @@ import { fetchGraphQLData } from "../utils/query.js";
 
 const query = `
 {
-  entries(section: "Contact", orderBy: "date DESC") {
-    title
+  entries(orderBy: "date DESC") {   
     ... on contact_contact_Entry {
+      title
       instagramLink
       discordLink
       linkedin
@@ -116,7 +116,8 @@ const query = `
     }
   }
 }`;
-const data = await fetchGraphQLData(query);
+const response = await fetchGraphQLData(query);
+const data = response.entries;
 
 export default {
   name: "Contact",
@@ -129,10 +130,10 @@ export default {
     };
   },
   created() {
-    this.instagram = data[0].instagramLink;
-    this.discord = data[0].discordLink;
-    this.linkedin = data[0].linkedin;
-    this.email = data[0].email;
+    this.instagram = data[1].instagramLink;
+    this.discord = data[1].discordLink;
+    this.linkedin = data[1].linkedin;
+    this.email = data[1].email;
   },
   methods: {
     openLink(link) {
