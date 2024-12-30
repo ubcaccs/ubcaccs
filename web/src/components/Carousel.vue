@@ -1,10 +1,5 @@
 <template>
   <div>
-    <link
-      rel="stylesheet"
-      href="../../node_modules/@glidejs/glide/dist/css/glide.core.min.css"
-    />
-
     <div class="glide px-4">
       <!-- ---------------  Slider  ---------------- -->
       <div class="glide__track px-8" data-glide-el="track">

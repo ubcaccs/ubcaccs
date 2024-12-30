@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import Microphone from '../../public/assets/Microphone.vue';
+import Microphone from '../components/Microphone.vue';
 import { fetchGraphQLData } from '../utils/query.js'; 
 const query = `
 {
