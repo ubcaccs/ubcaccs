@@ -28,8 +28,6 @@ COPY . .
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-RUN composer require "craftcms/aws-s3:^2.2.1" -w && php craft plugin/install aws-s3
-
 # Install PHP dependencies
 RUN composer install
 

@@ -1,4 +1,4 @@
-dateModified: 1735537998
+dateModified: 1735539648
 elementSources:
   craft\elements\Entry:
     -
@@ -93,11 +93,6 @@ meta:
     e96f6721-be18-4ff8-8aab-4121f8e8a14a: 'Instagram Link' # Instagram Link
     ebb6874b-10e3-4867-95cc-b3c079c408e2: Date # Date
     f74056b2-a18d-487f-a906-bba51c8ff7ec: Home # Home
-plugins:
-  aws-s3:
-    edition: standard
-    enabled: true
-    schemaVersion: '2.0'
 system:
   edition: solo
   live: true
