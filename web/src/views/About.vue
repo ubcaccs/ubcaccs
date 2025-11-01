@@ -11,6 +11,8 @@
         class="text-off-white text-[12px] text-left font-mainFont mb-8"
       ></p>
     </div>
+
+    <!-- 
     <div class="w-full sm:w-auto py-4">
       <div
         class="p-4 bg-navbar-blue rounded-[22px] max-w-[650px] w-full mx-auto"
@@ -21,6 +23,8 @@
         />
       </div>
     </div>
+    -->
+    
   </div>
 </template>
 
