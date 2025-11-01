@@ -88,4 +88,30 @@ export default {
   flex-wrap: nowrap !important;
   gap: 0.5px;
 }
+
+.glide {
+  position: relative; /* establish a positioning context */
+}
+
+.glide__arrows {
+  position: absolute;
+  top: 40%; /* move arrows up — adjust as needed (e.g., 30%, 50%) */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  pointer-events: none; /* lets clicks pass through except on buttons */
+}
+
+.glide__arrows button {
+  pointer-events: auto; /* buttons still clickable */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
 </style>

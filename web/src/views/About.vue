@@ -8,7 +8,7 @@
       </h1>
       <p
         v-html="description"
-        class="text-off-white text-[20px] text-left font-mainFont mb-8"
+        class="text-off-white text-[12px] text-left font-mainFont mb-8"
       ></p>
     </div>
     <div class="w-full sm:w-auto py-4">

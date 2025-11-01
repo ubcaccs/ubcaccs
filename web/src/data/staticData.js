@@ -10,23 +10,26 @@ export const staticData = {
   home: {
     title: "Welcome to AccessCS",
     subtext: "Join us for exciting events and connect with the computer science community!",
-    surveyUrl: "https://example.com/survey" // Replace with your actual survey URL
+    surveyUrl: "mailto:ubcaccs@gmail.com" // Replace with your actual survey URL
   },
 
   // About page data
   about: {
     title: "About Us",
-    subtext: "<p>AccessCS is a student organization at UBC dedicated to creating an inclusive and welcoming environment for all computer science students.</p>",
+    subtext: `<p class="mb-4">We're a community dedicated to creating a welcoming space in UBC's Computer Science department for everyone.</p>
+    <p class="mb-4">At AccessCS, we believe in two paths: fostering short-term social support and advocating for long-term departmental change. Our events and gatherings provide opportunities to connect, share experiences, and build lasting relationships. Together, we navigate academic challenges and celebrate victories, creating a supportive environment for all.</p>
+    <p class="mb-4">Backed by the Committee for Outreach, Diversity, and Equity (CODE), we're committed to driving meaningful change within the department. From Improving accessibility to amplifying representation, we stand for disability justice and transformative justice. We recognize the importance of learning, growth, and accountability within our community, fostering an environment where feedback and dialogue are valued.</p>
+    <p>Join us in championing inclusivity, challenging ableism, and embracing diversity. Together, we're shaping a more equitable future for all!</p>`,
     // subtext can contain HTML
   },
 
   // Contact page data
   contact: {
     title: "Contact Us",
-    instagramLink: "https://instagram.com/yourhandle", // Replace with your Instagram link
-    discordLink: "https://discord.gg/yourserver", // Replace with your Discord link
-    linkedin: "https://linkedin.com/company/yourcompany", // Replace with your LinkedIn link
-    email: "mailto:contact@example.com" // Replace with your email
+    instagramLink: "https://instagram.com/ubcaccs", 
+    discordLink: "https://discord.gg/mEBW7MsF", 
+    linkedin: "https://www.linkedin.com/company/ubcaccs",
+    email: "mailto:ubcaccs@gmail.com" 
   },
 
   // Events data
@@ -43,6 +46,52 @@ export const staticData = {
     //   rsvpRequired: true, // true or false
     //   rsvpLink: "https://example.com/rsvp" // RSVP link (required if rsvpRequired is true)
     // }
+
+    {
+      title: "Test Event",
+      description: "Event description text",
+      eventImage: [{ url: "/images/events/origami.png" }],
+      date: "2025-11-20",
+      beginTime: "2025-11-20T17:00:00",
+      endTime: "2025-11-20T19:00:00",
+      rsvpRequired: true,
+      rsvpLink: "https://google.ca"
+    },
+
+    {
+      title: "Test Event",
+      description: "Event description text",
+      eventImage: [{ url: "/images/events/origami.png" }],
+      date: "2025-11-20",
+      beginTime: "2025-11-20T17:00:00",
+      endTime: "2025-11-20T19:00:00",
+      rsvpRequired: true,
+      rsvpLink: "https://google.ca"
+    },
+
+    {
+      title: "Test Event",
+      description: "Event description text",
+      eventImage: [{ url: "/images/events/origami.png" }],
+      date: "2025-11-20",
+      beginTime: "2025-11-20T17:00:00",
+      endTime: "2025-11-20T19:00:00",
+      rsvpRequired: true,
+      rsvpLink: "https://google.ca"
+    },
+
+    {
+      title: "Test Event",
+      description: "Event description text",
+      eventImage: [{ url: "/images/events/origami.png" }],
+      date: "2025-11-20",
+      beginTime: "2025-11-20T17:00:00",
+      endTime: "2025-11-20T19:00:00",
+      rsvpRequired: true,
+      rsvpLink: "https://google.ca"
+    },
   ]
+
+
 };
 
