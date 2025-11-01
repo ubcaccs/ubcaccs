@@ -2,13 +2,13 @@
   <div class="flex flex-wrap justify-center items-start flex-grow pb-32 py-24 px-2">
     <div class="align-start pr-2 max-w-[700px] w-full ">
       <h1
-        class="text-off-white font-headerFont font-bold text-6xl text-left mb-8 leading-normal"
+        class="text-off-white font-headerFont font-bold text-6xl text-center mb-8 leading-normal"
       >
         About us
       </h1>
       <p
         v-html="description"
-        class="text-off-white text-[12px] text-left font-mainFont mb-8"
+        class="text-off-white text-[12px] text-center font-mainFont mb-8"
       ></p>
     </div>
 
@@ -24,7 +24,7 @@
       </div>
     </div>
     -->
-    
+
   </div>
 </template>
 
