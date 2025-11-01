@@ -48,48 +48,16 @@ export const staticData = {
     // }
 
     {
-      title: "Test Event",
-      description: "Event description text",
+      title: "Origami + Sushi Social",
+      description: "We're back! Come enjoy some sushi with us while we make origami at our first event of semester!",
       eventImage: [{ url: "/images/events/origami.png" }],
-      date: "2025-11-20",
+      date: "2025-11-20T00:00:00-08:00",
       beginTime: "2025-11-20T17:00:00",
       endTime: "2025-11-20T19:00:00",
       rsvpRequired: true,
-      rsvpLink: "https://google.ca"
-    },
+      rsvpLink: "mailto:ubcaccs@gmail.com"
+    }
 
-    {
-      title: "Test Event",
-      description: "Event description text",
-      eventImage: [{ url: "/images/events/origami.png" }],
-      date: "2025-11-20",
-      beginTime: "2025-11-20T17:00:00",
-      endTime: "2025-11-20T19:00:00",
-      rsvpRequired: true,
-      rsvpLink: "https://google.ca"
-    },
-
-    {
-      title: "Test Event",
-      description: "Event description text",
-      eventImage: [{ url: "/images/events/origami.png" }],
-      date: "2025-11-20",
-      beginTime: "2025-11-20T17:00:00",
-      endTime: "2025-11-20T19:00:00",
-      rsvpRequired: true,
-      rsvpLink: "https://google.ca"
-    },
-
-    {
-      title: "Test Event",
-      description: "Event description text",
-      eventImage: [{ url: "/images/events/origami.png" }],
-      date: "2025-11-20",
-      beginTime: "2025-11-20T17:00:00",
-      endTime: "2025-11-20T19:00:00",
-      rsvpRequired: true,
-      rsvpLink: "https://google.ca"
-    },
   ]
 
 
