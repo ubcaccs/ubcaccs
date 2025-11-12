@@ -1,0 +1,26 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.logo-image {
+  padding-top: 0.5em; /* Adjust the value as needed */
+}
+.pm-5 {
+  padding-left: 1.3rem; /* Adjust the value as needed */
+}
+
+::-webkit-scrollbar-track {
+  background: #030B1F; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #143a7b; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  border: 3px solid #030B1F;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb when hovered */
+}
