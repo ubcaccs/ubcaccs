@@ -27,7 +27,7 @@ export const staticData = {
   contact: {
     title: "Contact Us",
     instagramLink: "https://instagram.com/ubcaccs", 
-    discordLink: "https://discord.gg/mEBW7MsF", 
+    discordLink: "https://discord.gg/5jh9ZRWcah", 
     linkedin: "https://www.linkedin.com/company/ubcaccs",
     email: "mailto:ubcaccs@gmail.com" 
   },
@@ -48,14 +48,14 @@ export const staticData = {
     // }
 
     {
-      title: "Origami + Sushi Social",
-      description: "We're back! Come enjoy some sushi with us while we make origami at our first event of semester!",
+      title: "Sushi & Origami Social",
+      description: "Need a break from midterms? Come unwind with AccessCS for a chill evening of sushi, origami, and community 🩵. This social is the perfect opportunity to meet like minded individuals and connect with a community!",
       eventImage: [{ url: "/images/events/origami.png" }],
       date: "2025-11-20T00:00:00-08:00",
       beginTime: "2025-11-20T17:00:00",
       endTime: "2025-11-20T19:00:00",
       rsvpRequired: true,
-      rsvpLink: "mailto:ubcaccs@gmail.com"
+      rsvpLink: "https://my.cs.ubc.ca/event/2025/11/accesscs-social-night"
     }
 
   ]
