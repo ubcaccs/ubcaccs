@@ -50,7 +50,7 @@ export const staticData = {
     {
       title: "Sushi & Origami Social",
       description: "Need a break from midterms? Come unwind with AccessCS for a chill evening of sushi, origami, and community 🩵. This social is the perfect opportunity to meet like minded individuals and connect with a community!",
-      eventImage: [{ url: "/images/events/origami.png" }],
+      eventImage: [{ url: "/accesscs/images/events/origami.png"}],
       date: "2025-11-20T00:00:00-08:00",
       beginTime: "2025-11-20T17:00:00",
       endTime: "2025-11-20T19:00:00",
